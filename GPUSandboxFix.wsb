@@ -1,0 +1,11 @@
+<Configuration>
+  <!-- GPU-related fix for Windows Sandbox -->
+  <VGpu>Disable</VGpu>
+  <Networking>Enable</Networking>
+  <AudioInput>Disable</AudioInput>
+  <VideoInput>Disable</VideoInput>
+  <ProtectedClient>Enable</ProtectedClient>
+  <PrinterRedirection>Disable</PrinterRedirection>
+  <ClipboardRedirection>Enable</ClipboardRedirection>
+  <MemoryInMB>4096</MemoryInMB>
+</Configuration>

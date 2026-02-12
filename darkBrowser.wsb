@@ -1,0 +1,24 @@
+<Configuration>
+  <!-- Dark/TOR Browser Configuration -->
+  <VGpu>Disable</VGpu>
+  <Networking>Enable</Networking>
+  <AudioInput>Disable</AudioInput>
+  <VideoInput>Disable</VideoInput>
+  <ProtectedClient>Enable</ProtectedClient>
+  <PrinterRedirection>Disable</PrinterRedirection>
+  <ClipboardRedirection>Disable</ClipboardRedirection>
+  <MemoryInMB>4096</MemoryInMB>
+  
+  <!-- Scripts folder mapping -->
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>C:\Users\Public\Documents\SandboxScripts</HostFolder>
+      <SandboxFolder>C:\Scripts</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  
+  <LogonCommand>
+    <Command>C:\Scripts\InstallTOR.cmd</Command>
+  </LogonCommand>
+</Configuration>

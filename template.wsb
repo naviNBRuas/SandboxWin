@@ -1,0 +1,45 @@
+<Configuration>
+  <!-- Standard Windows Sandbox Configuration Template -->
+  <!-- vGPU: Controls virtualized GPU support -->
+  <VGpu>Disable</VGpu>
+  
+  <!-- Networking: Controls network access (Enable/Disable) -->
+  <Networking>Enable</Networking>
+  
+  <!-- AudioInput: Controls microphone access (Enable/Disable) -->
+  <AudioInput>Disable</AudioInput>
+  
+  <!-- VideoInput: Controls camera access (Enable/Disable) -->
+  <VideoInput>Disable</VideoInput>
+  
+  <!-- ProtectedClient: Enables enhanced security (Enable/Disable) -->
+  <ProtectedClient>Enable</ProtectedClient>
+  
+  <!-- PrinterRedirection: Controls printer access (Enable/Disable) -->
+  <PrinterRedirection>Disable</PrinterRedirection>
+  
+  <!-- ClipboardRedirection: Controls clipboard sharing (Enable/Disable) -->
+  <ClipboardRedirection>Enable</ClipboardRedirection>
+  
+  <!-- MemoryInMB: Sets allocated memory in MB -->
+  <MemoryInMB>4096</MemoryInMB>
+  
+  <!-- MappedFolders: Defines host directories mapped to sandbox -->
+  <MappedFolders>
+    <!-- Example mapping - adjust paths as needed -->
+    <!--
+    <MappedFolder>
+      <HostFolder>C:\Users\Public\Documents</HostFolder>
+      <SandboxFolder>C:\SandboxDocuments</SandboxFolder>
+      <ReadOnly>false</ReadOnly>
+    </MappedFolder>
+    -->
+  </MappedFolders>
+  
+  <!-- LogonCommand: Command(s) executed after sandbox starts -->
+  <!--
+  <LogonCommand>
+    <Command>cmd /c echo Sandbox initialized</Command>
+  </LogonCommand>
+  -->
+</Configuration>

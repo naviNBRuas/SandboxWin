@@ -1,0 +1,24 @@
+<Configuration>
+  <!-- Unknown Software Analysis Environment (Isolated) -->
+  <VGpu>Disable</VGpu>
+  <Networking>Disable</Networking>
+  <AudioInput>Disable</AudioInput>
+  <VideoInput>Disable</VideoInput>
+  <ProtectedClient>Enable</ProtectedClient>
+  <PrinterRedirection>Disable</PrinterRedirection>
+  <ClipboardRedirection>Disable</ClipboardRedirection>
+  <MemoryInMB>4096</MemoryInMB>
+  
+  <!-- Downloads folder mapping for analysis -->
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>C:\Users\Public\Downloads</HostFolder>
+      <SandboxFolder>C:\Analysis</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  
+  <LogonCommand>
+    <Command>cmd /c echo Isolated analysis environment ready</Command>
+  </LogonCommand>
+</Configuration>

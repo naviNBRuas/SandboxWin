@@ -1,0 +1,29 @@
+<Configuration>
+  <!-- Office Productivity Environment -->
+  <VGpu>Disable</VGpu>
+  <Networking>Enable</Networking>
+  <AudioInput>Disable</AudioInput>
+  <VideoInput>Disable</VideoInput>
+  <ProtectedClient>Enable</ProtectedClient>
+  <PrinterRedirection>Enable</PrinterRedirection>
+  <ClipboardRedirection>Enable</ClipboardRedirection>
+  <MemoryInMB>4096</MemoryInMB>
+  
+  <!-- Scripts folder mapping -->
+  <MappedFolders>
+    <MappedFolder>
+      <HostFolder>C:\Users\Public\Documents\SandboxScripts</HostFolder>
+      <SandboxFolder>C:\Scripts</SandboxFolder>
+      <ReadOnly>true</ReadOnly>
+    </MappedFolder>
+    <MappedFolder>
+      <HostFolder>C:\Users\Public\Documents</HostFolder>
+      <SandboxFolder>C:\Documents</SandboxFolder>
+      <ReadOnly>false</ReadOnly>
+    </MappedFolder>
+  </MappedFolders>
+  
+  <LogonCommand>
+    <Command>cmd /c echo Office productivity environment ready</Command>
+  </LogonCommand>
+</Configuration>
